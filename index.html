@@ -16,55 +16,70 @@
                     <h1>Frost<span>Network</span></h1>
                 </div>
                 <div id="nav-r">
+                     <div class="navbar-toggle">&#9776;</div>
                     <a href="#">shop</a>
                     <a href="#">Vote</a>
                     <a href="#">discord</a>
                     <div class="login"><a href="#" >LOGIN</a></div>
                 </div>
             </div>
+            
             <div id="contaner">
                 <div class="logo">
                     <img src="./img/20231104_173408.png" width="350px" alt="">
                 </div>
                 <div id="but">
-                  <div class="but"><i class="mdi mdi-account-circle"></i>
-                    <a href="#">Play</a></div>
-                  <div class="but"><i class="mdi mdi-discord"></i><a href="#">Discord</a></div>
+                  <div class="but">
+                    <i class="mdi mdi-account-circle"></i>
+                    <div class="but-1">
+                        <a href="#">Play.FROSTNETWORK.XYZ</a>
+                        <h5>click to join</h5>
+                    </div>
+                  </div>
+                  <div class="but">
+                    <div class="but-1">
+                        <a href="#">DISCORD SERVER </a>
+                        <h5>click to join</h5>
+                    </div>
+                    <i class="mdi mdi-discord"></i></div>
                 </div>
             </div>
         </div>
         <div id="page2"> 
+               
+            <div class="hfhf">
                 <h1>Welcome To Shop</h1>
-            <div id="shop">
-                <div class="cards">
-                    <div class="card-img">
-                        <img src="img/images-removebg-preview.png" width="200" alt="">
+                <div id="shop">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="img/f84d169eddb4aa77e8be524be54ac9ce_1.webp" width="200" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h1>text</h1>
+                            <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
+                        </div>
                     </div>
-                    <div class="card-text">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./img/9575e7f9c06c1ff52b4941889605848a.webp" width="200" alt="">
+                        </div>
                         <h1>text</h1>
                         <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
                     </div>
-                </div>
-                <div class="cards">
-                    <div class="card-img">
-                        <img src="./img/images__2_-removebg-preview.png" width="200" alt="">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./img/f84d169eddb4aa77e8be524be54ac9ce_1.webp" width="250" alt="">
+                        </div>
+                        <h1>text</h1>
+                        <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
                     </div>
-                    <h1>text</h1>
-                    <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
-                </div>
-                <div class="cards">
-                    <div class="card-img">
-                        <img src="./img/images__1_-removebg-preview.png" width="250" alt="">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./img/b706227180b9e9e38a05c85d38cb7ea8.webp" width="160" alt="">
+                        </div>
+                        <h1>text</h1>
+                        <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
                     </div>
-                    <h1>text</h1>
-                    <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
-                </div>
-                <div class="cards">
-                    <div class="card-img">
-                        <img src="./img/images__1_-removebg-preview (1).png" width="160" alt="">
-                    </div>
-                    <h1>text</h1>
-                    <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugit itaque voluptas magnam qui nostrum eos officiis,</p></div>
                 </div>
             </div>
         </div>
@@ -72,5 +87,15 @@
             <iframe src="https://discord.com/widget?id=1152905414778830848&theme=dark"  height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const toggleButton = document.querySelector('.navbar-toggle');
+          const navbarMenu = document.querySelector('#nav-r');
+      
+          toggleButton.addEventListener('click', function () {
+            navbarMenu.classList.toggle('active');
+          });
+        });
+      </script>
 </body>
 </html>

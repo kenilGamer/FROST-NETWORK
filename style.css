@@ -20,7 +20,7 @@ html , body{
 #page1{
     width: 100vw;
     min-height: 100vh;
-    background: url(./img/3fd7b8_120f87fee0f943ebbdc0d161ed190a78~mv2.webp) fixed no-repeat;
+    background: url(./img/1321420-752fe8602eabad48e4b679cc51ade45a7ebde470.png) fixed no-repeat;
     background-size: cover;
     overflow-y: hidden;
     z-index: 10;
@@ -85,6 +85,7 @@ html , body{
     padding: 10px 20px;
     border-radius: 5vw;
 }
+
 @keyframes nav2 {
     0%{
         background-color: #db000042;
@@ -103,9 +104,12 @@ html , body{
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    background: #cacaca41;
+    background: #2c2b2b41;
     width: 100vw;
     min-height: 100vh;
+    font-family: forsot;
+
+    text-transform: uppercase;
     /* gap: 50px; */
     /* backdrop-filter: blur(4px); */
   
@@ -134,7 +138,7 @@ html , body{
 }
 
 #but{
-    font-family: forsot;
+    /* font-family: forsot; */
     /* background: #0265c2; */
     align-items: center;
     justify-content: space-between;
@@ -144,36 +148,59 @@ html , body{
 #but a{
     text-decoration: none;
     color: rgb(1, 253, 241);
+    font-size: 28px;
+    
+    /* font-weight: 400; */
     /* background-color: azure; */
 }
+#but h5{
+    text-align: end;
+    color: #fff;
+}
 #but .but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border:2px solid rgb(0, 255, 234);
     background-color: rgba(240, 248, 255, 0.171);
-    padding: 30px 130px;
-    border-radius: 5vh;
-    font-size: 2vw;
-    font-weight: 900;
+    padding: 10px 30px;
+    border-radius: 2vh;
+    
     transition: all .7s;
     gap: 20px;
     backdrop-filter: blur(2px);
+}
+#but .but:nth-child(1) h5{
+    /* background-color: #00d0f5; */
+    text-align: start;
 }
 #but .but:hover{
     box-shadow:  0 0 20px 2px #00d0f5;
 }
 #but .but i{
  color: aqua;
- font-size: 30px;
+ font-size: 58px;
 } 
+
 /* page 2 */
 
 #page2{
+    position: relative;
     width: 100vw;
-    z-index: 20;
+    /* z-index: 20; */
     overflow: hidden;
     min-height: 100vh;
-    padding: 10vh 2vw;
+    /* padding: 10vh 2vw; */
     background: url(./img/Minecraft-viewpoint-2250268-wallhere.com.jpg)  no-repeat center;
     background-size: cover;
+    
+}
+.hfhf{
+    padding: 10vh 2vw;
+    position: absolute;
+    background: #0000008f;
+    width: 100%;
+    height: 100%;
 }
 #page2 > h1{
     text-align: center;
@@ -209,6 +236,7 @@ html , body{
     height: 35%;
 }
 .card-img {
+    position: relative;
     height: 65%;
     width: 100%;
     /* background-color: chocolate; */
@@ -223,21 +251,14 @@ html , body{
     box-shadow: 0 0 20px 1px #00d0f596;
 }
 .card-img img{
+    position: absolute;
     background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     /* background-position: center; */
 }
-.cards:nth-child(1) img{
-    margin: -20px 60px;
-}
-.cards:nth-child(2) img{
-    margin: 25px 60px;
-}
-.cards:nth-child(3) img{
-    margin: -25px 30px;
-}
-.cards:nth-child(4) img{
-    margin: 15px 80px;
-}
+
 #page3{
     width: 100%;
     height: 100vh;
@@ -257,18 +278,7 @@ html , body{
     .cards{
         width: 45%;
     }
-    .cards:nth-child(1) img{
-        margin: 130px 100px;
-    }
-    .cards:nth-child(2) img{
-        margin: 180px 100px;
-    }
-    .cards:nth-child(3) img{
-        margin: 125px 80px;
-    }
-    .cards:nth-child(4) img{
-        margin: 150px 110px;
-    }
+   
     #but{
         flex-direction: column;
         gap: 30px;
@@ -289,18 +299,7 @@ html , body{
     .cards{
         width: 100%;
     }
-    .cards:nth-child(1) img{
-        margin: -20px 200px;
-    }
-    .cards:nth-child(2) img{
-        margin: 25px 200px;
-    }
-    .cards:nth-child(3) img{
-        margin: -25px 160px;
-    }
-    .cards:nth-child(4) img{
-        margin: 15px 200px;
-    }
+   
     #but{
         flex-direction: column;
         gap: 30px;
@@ -321,18 +320,6 @@ html , body{
     .cards{
         width: 100%;
     }
-    .cards:nth-child(1) img{
-        margin: -20px 120px;
-    }
-    .cards:nth-child(2) img{
-        margin: 25px 130px;
-    }
-    .cards:nth-child(3) img{
-        margin: -25px 90px;
-    }
-    .cards:nth-child(4) img{
-        margin: 15px 130px;
-    }
     #but{
         flex-direction: column;
         gap: 30px;
@@ -345,3 +332,40 @@ html , body{
         margin-top: 60px;
     }
 }
+ /* Add this at the end of your existing CSS */
+@media screen and (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 10px;
+    }
+  
+    #nav-r {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    #nav-r > a {
+      margin-top: 10px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #nav-r {
+      display: none;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-menu.active {
+      display: block;
+    }
+  }
+  

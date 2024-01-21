@@ -15,19 +15,19 @@ html , body{
 #main{
     overflow-y: hidden;
     background-color: rgb(16, 155, 109);
-    /* width: 100%;/ */
+    /* width: 100%; */
 }
 #page1{
-    width: 100vw;
+    width: 99.99%;
     min-height: 100vh;
     background: url(./img/1321420-752fe8602eabad48e4b679cc51ade45a7ebde470.png) fixed no-repeat;
     background-size: cover;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     z-index: 10;
-    /* overflow-x: auto; */
+    overflow-x: auto;
 }
 #nav{
-    width: 100%;
+    width: 99.88%;
     height: 9vh;
     background-color: rgba(221, 221, 221, 0.26);
     position: fixed;
@@ -105,7 +105,7 @@ html , body{
     justify-content: center;
     overflow-y: hidden;
     background: #2c2b2b41;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     font-family: forsot;
 
@@ -144,6 +144,7 @@ html , body{
     justify-content: space-between;
     width: 80%;
     display: flex;
+    gap: 20px;
 }
 #but a{
     text-decoration: none;
@@ -165,7 +166,7 @@ html , body{
     background-color: rgba(240, 248, 255, 0.171);
     padding: 10px 30px;
     border-radius: 2vh;
-    
+    /* gap: 50px; */
     transition: all .7s;
     gap: 20px;
     backdrop-filter: blur(2px);
@@ -185,11 +186,11 @@ html , body{
 /* page 2 */
 
 #page2{
-    position: relative;
-    width: 100vw;
+    /* position: relative; */
+    width: 100%;
     /* z-index: 20; */
     overflow: hidden;
-    min-height: 100vh;
+    height: 100%;
     /* padding: 10vh 2vw; */
     background: url(./img/Minecraft-viewpoint-2250268-wallhere.com.jpg)  no-repeat center;
     background-size: cover;
@@ -197,10 +198,10 @@ html , body{
 }
 .hfhf{
     padding: 10vh 2vw;
-    position: absolute;
+    /* position: absolute; */
     background: #0000008f;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 #page2 > h1{
     text-align: center;
@@ -213,7 +214,7 @@ html , body{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    /* height: 80vh; */
+    /* height: 90vh; */
     /* background-color: #db000021; */
     gap: 10px;
     margin-top: 20px;
@@ -221,7 +222,7 @@ html , body{
 }
 .cards{
     width: 24%;
-    height: 52vh;
+    height: 58vh;
     /* background-color: #db006627; */
     border: #fff 1px solid; 
     transition: all 1s;
@@ -260,6 +261,8 @@ html , body{
 }
 
 #page3{
+    background: url(./img/atoz-botva.jpg)  no-repeat center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -270,13 +273,70 @@ html , body{
     margin-top: 20px;
     width: 95vw;
 }
-@media screen and (max-width: 950px) {
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #00d0f5;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.footer-l{
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+    /* background: #00171b; */
+    width: 25%;
+    height: 100%;
+}
+.footer-l h3{
+    text-align: center;
+    color: #fff;
+}
+.footer-m{  
+    width: 35%;
+    height: 100%;
+    /* background: #00171b; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-m h5,p{
+    /* color: #00d0f5; */
+    text-wrap: wrap;
+}
+.footer-r{
+    width: 25%;
+    height: 100%;
+    /* background-color: #00171b; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-r a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.footer-r a:nth-child(1){
+    color: #0d3da5;
+}
+.footer-r a:nth-child(2){
+    color: red;
+}
+.footer-r a:nth-child(3){
+    color: #08f7ff;
+}
+@media screen and (max-width: 1000px) {
     .cards:hover{
         /* margin-top: -30px; */
         box-shadow: 0 0 20px 2px #ffffff;
     }
     .cards{
         width: 45%;
+        height: 60vh;
     }
    
     #but{
@@ -292,6 +352,45 @@ html , body{
     }
 }
 @media screen and (max-width: 600px) {
+   
+    #but a{
+        text-decoration: none;
+        color: rgb(1, 253, 241);
+        font-size: 18px;
+        
+        /* font-weight: 400; */
+        /* background-color: azure; */
+    }
+    #but h5{
+        font-size: 18px;
+        text-align: end;
+        color: #fff;
+    }
+    #but .but{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid rgb(0, 255, 234);
+        background-color: rgba(240, 248, 255, 0.171);
+        padding: 10px 10px;
+        border-radius: 2vh;
+        
+        transition: all .7s;
+        gap: 10px;
+        backdrop-filter: blur(2px);
+    }
+    #but .but:nth-child(1) h5{
+        /* background-color: #00d0f5; */
+        text-align: start;
+    }
+    #but .but:hover{
+        box-shadow:  0 0 20px 2px #00d0f5;
+    }
+    #but .but i{
+     color: aqua;
+     font-size: 30px;
+    } 
+    
     .cards:hover{
         /* margin-top: -30px; */
         box-shadow: 0 0 20px 2px #ffffff;
@@ -312,7 +411,7 @@ html , body{
         margin-top: 60px;
     }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 510px) {
     .cards:hover{
         /* margin-top: -30px; */
         box-shadow: 0 0 20px 2px #ffffff;
@@ -331,11 +430,25 @@ html , body{
     .logo{
         margin-top: 60px;
     }
+    .footer-l img{
+        width: 70px;
+    }
+    .footer-l h3{
+        font-size: 15px;
+    }
+    .footer-m{
+        /* background-color: #0d3da5; */
+        width: 40%;
+    }
+    .footer-m h5,p{
+        font-size: 1px;
+    }
+    
 }
  /* Add this at the end of your existing CSS */
 @media screen and (max-width: 768px) {
     #nav {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
       height: auto;
       padding: 10px;
@@ -368,4 +481,18 @@ html , body{
       display: block;
     }
   }
-  
+  @media screen and (max-width: 350px){
+    .footer-l img{
+        width: 70px;
+    }
+    .footer-l h3{
+        font-size: 12px;
+    }
+    .footer-m{
+        /* background-color: #0d3da5; */
+        width: 30%;
+    }
+    .footer-m h5,p{
+        font-size: 10px;
+    }
+  }

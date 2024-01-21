@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frost network</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.9.96/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,8 +19,9 @@
                     <img src="/img/20231104_173408.png" width="70" alt="">
                     <h1>Frost<span>Network</span></h1>
                 </div>
-                <div id="nav-r">
-                     <div class="navbar-toggle">&#9776;</div>
+                <div class="navbar-toggle">&#9776;</div>
+                <div id="nav-r" class="navbar-menu">
+                     
                     <a href="#">shop</a>
                     <a href="#">Vote</a>
                     <a href="#">discord</a>
@@ -86,11 +91,32 @@
         <div id="page3">
             <iframe src="https://discord.com/widget?id=1152905414778830848&theme=dark"  height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
+        <footer>
+            <div class="footer-l">
+                <img src="./img/20231104_173408.png" width="100" alt="">
+                <h3>FROST NETWORK TEAM</h3>
+            </div>
+            <div class="footer-m">
+                <h5>©2024 FORST NETWORK | All Rights Reserved.</h5>
+                <p>Made by FORST NETWORK TEAM</p>
+            </div>
+            <div class="footer-r">
+                <a href="">
+                    <i class="ri-discord-fill"></i>
+                </a>
+                <a href="">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+                <a href="">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+            </div>
+        </footer>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
           const toggleButton = document.querySelector('.navbar-toggle');
-          const navbarMenu = document.querySelector('#nav-r');
+          const navbarMenu = document.querySelector('.navbar-menu');
       
           toggleButton.addEventListener('click', function () {
             navbarMenu.classList.toggle('active');

@@ -56,7 +56,7 @@ html , body{
     /* color: aliceblue; */
     display: flex;
     /* background-color: aqua; */
-    gap: 10px;
+    gap: 15px;
     width: 30%;
     align-items: center;
     justify-content: space-around;
@@ -284,6 +284,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    gap: 20px;
 }
 .footer-l{
     display: flex;

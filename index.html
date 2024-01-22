@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.9.96/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="gg()">
+    <div id="top"></div>
     <div id="main">
+       
         <div id="page1">
             <div id="nav">
                 <div id="nav-l">
@@ -113,15 +115,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const toggleButton = document.querySelector('.navbar-toggle');
-          const navbarMenu = document.querySelector('.navbar-menu');
-      
-          toggleButton.addEventListener('click', function () {
-            navbarMenu.classList.toggle('active');
-          });
-        });
-      </script>
+  <script src="./index.js"></script>
 </body>
 </html>

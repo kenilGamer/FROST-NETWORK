@@ -222,9 +222,28 @@ html , body{
     margin-top: 20px;
    
 }
+.cards .buy a{
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    color: #81e8fa;
+    /* width: 100%; */
+    background-color: #0000008f;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
 .cards{
+    /* text-align: center/; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 24%;
-    height: 58vh;
+    height: 60vh;
     /* background-color: #db006627; */
     border: #fff 1px solid; 
     transition: all 1s;
@@ -246,7 +265,8 @@ html , body{
     border: #00d0f52f 7px solid;
     
 }
-.card-text p,h1{
+.cards p,h1{
+    text-align: center;
     text-align: center;
     text-wrap: wrap;
 }
@@ -332,6 +352,7 @@ footer{
 .footer-r a:nth-child(3){
     color: #08f7ff;
 }
+
 @media screen and (max-width: 1000px) {
     .cards:hover{
         /* margin-top: -30px; */

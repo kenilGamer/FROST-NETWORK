@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #282828;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(./img/Minecraft-viewpoint-2250268-wallhere.com.jpg)  no-repeat center;
+    background-size: cover;
+}
+
+.login-container {
+    background-color: #ffffff2c;
+    backdrop-filter: blue(30px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.minecraft-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <img src="/img/20231104_173408.png" alt="Minecraft Logo" class="minecraft-logo">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="password" required>
+                </div>
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+    // Add your login logic here
+    // For now, just prevent the form from submitting
+    alert("Login button clicked. Add your login logic!");
+}
+
+    </script>
+</body>
+</html>

@@ -16,7 +16,7 @@
 
 .login-container {
     background-color: #ffffff2c;
-    backdrop-filter: blur(3hapx);
+    backdrop-filter: blur(3px);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.432);

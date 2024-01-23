@@ -6,7 +6,7 @@
     <title>Minecraft Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
 </head>
 <body>
 
@@ -16,35 +16,32 @@
             <h2>Login to Your Account</h2>
             <form id="loginForm">
                 <div class="input-group">
+                    <label for="username">Gmail:</label>
+                    <input type="text" id="gmail" name="gmail" placeholder="Gmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">fullName:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="fullName" required>
+                </div>
+                <div class="input-group">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" placeholder="Username" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Password:</label>
-
                     <input type="password" id="password" name="password" placeholder="password" required>
                 </div>
                <div class="but">
-                <div class="dd"><button type="submit" onclick="login()">
-                    <img src="./img/login.png" width="20" alt=""><a href="./index.html">Login</a>
-                </button></div>
+                <button type="submit" onclick="login()"><a href="./index.html">sinup</a></button>
+                <div class="dd"></div>
                 or
                 <button  type="button">
-                    <a href="#">sinup</a>
+                    <a href="#">Login</a>
                 </button>
                </div>
-               <div class="ico">
-                <a href="#">
-                    <img src="./img/discord.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="./img/search.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="./img/facebook.png" alt="">
-                </a>
-               </div>
-                
+                <div>
+
+                </div>
             </form>
         </div>
     </div>

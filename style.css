@@ -226,7 +226,7 @@ html , body{
     margin-top: 20px;
    
 }
-.cards .buy a{
+.cards .buy button{
     text-decoration: none;
     margin: 10px 0;
     display: flex;

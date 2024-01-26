@@ -126,3 +126,38 @@ gsap.from("#page3 iframe",{
 //   }
 
 // })
+
+
+gsap.from("#main footer",{
+  y: -100,
+  duration: 2,
+  opacity: 0,
+  // stagger: 0.5,
+  // rotate: 36
+  scrollTrigger:{
+      trigger:"#main",
+      scroll: "body",
+      markers: true,
+      start: "top 90%",
+      end: "top 100%",
+      scrub: 2,
+      // pin: true
+  }
+})  
+
+
+
+function clickss(button) {
+  let text;
+  if (confirm("BUY NOW !") == true) {
+    text = "Add To Card Successful!";
+  } else {
+    text = "You canceled!";
+  }
+
+  // Find the nearest parent with class "cards" and then select the ".result" element
+  let resultElement = button.closest(".cards").querySelector(".result");
+  resultElement.innerText = text;
+}
+
+// clickss()

@@ -81,7 +81,7 @@ gsap.from("#page2 .hfhf",{
       // markers: true,
       start: "top 30%",
       end: "top 130%",
-      scrub: 1,
+      scrub: 5,
       // pin: true
   }
 

@@ -12,11 +12,7 @@ html , body{
     height: 100%;
     width: 100%;
 }
-#main{
-    overflow-y: hidden;
-    background-color: rgb(16, 155, 109);
-    /* width: 100%; */
-}
+
 #page1{
     width: 99.99%;
     min-height: 100vh;
@@ -204,14 +200,13 @@ html , body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* padding: 10vh 2vw; */
+    padding: 10vh 2vw;
+    transition: all .1s;
     /* position: absolute; */
     background: #0000008f;
-    width: 10%;
-    min-height: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    min-height: 100vh;
+    
 }
 #page2 > h1{
     text-align: center;
@@ -294,13 +289,15 @@ html , body{
     background: url(./img/atoz-botva.jpg)  no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 #page3 iframe{
-    margin-top: 20px;
+    margin-top: 80px;
+    position: absolute;
     width: 95vw;
 }
 footer{

@@ -137,7 +137,7 @@ gsap.from("#main footer",{
   scrollTrigger:{
       trigger:"#main",
       scroll: "body",
-      markers: true,
+      // markers: true,
       start: "top 90%",
       end: "top 100%",
       scrub: 2,
